@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online-zoo</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/" class="logo-link">
+                        <img src="./assets/svg/logo.svg" alt="online-zoo logo">
+                    </a>
+                </div>
+                
+                <nav class="header__nav">
+                   <ul class="header__list-nav">
+                    <li class="header__item">
+                        <a href="/" class="header__link li-active">About</a>
+                    </li>
+                    <li class="header__item">
+                        <!-- перебрасывает на map -->
+                        <a href="/pages/map.html" class="header__link">Map</a>
+                    </li>
+                    <li class="header__item">
+                        <!-- перебрасывает на cam-panda-online -->
+                        <a href="/pages/camPanda.html" class="header__link">Zoos</a>
+                    </li>
+                    <li class="header__item">
+                        <!-- ничего не делает, либо создать страницу error404 -->
+                        <a href="#!" class="header__link">Contact us</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="header__link">Designed by ©</a>
+                    </li>
+                   </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="intro__width-full">
+            <div class="intro">
+                <img src="./assets/svg/Landing/ellipse.svg" alt="ellipse" class="ellipse-for-title">
+                <h1 class="intro__title">
+                    Watch your <span class="color-text">favorite</span> animal online
+                </h1>
+                <!-- нажатие на кнопку должно перебросить на cam_panda_online -->
+                <a href="/pages/camPanda.html" class="button-link">
+                    <button type="submit" class="button__watch-online">
+                        watch online
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section class="backstage__width-full">
+            <div class="backstage">
+                <div class="backstage-pic">
+                    <img src="./assets/Landing/bamboo-cap.png" alt="bamboo-cap" class="backstage__pic">
+                </div>
+                <div class="backstage-text">
+                    <h2 class="backstage__title">
+                        The Backstage of the Wilderness World.
+                    </h2>
+                    <div class="backstage__title-text">
+                        The site was founded on the basis of a volunteer movement to protect and care for animals.
+                    </div>
+                    <div class="backstage__subtitle">
+                        How it works 
+                    </div>
+                    <div class="backstage__subtitle-text">
+                        The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section class="animals__width-full">
+            <!-- сделать активными стрелки, добавить анимацию -->
+            <div class="animals">
+                <img src="./assets/svg/Landing/arrow_elips_left.svg" alt="navigate" class="animals__vector">
+                <!-- сделать карточки интерактивными -->
+                <!-- добавить иконки -->
+                <div class="wrap__animals">
+                    <div class="animals-card card-pandas margin-right margin-bottom">
+                        <div class="animal__card-title">
+                            giant Pandas
+                        </div>
+                        <div class="animal__card-subtitle">
+                            Native to Southwest China
+                        </div>
+                    </div>
+                    <div class="animals-card card-eagles margin-right margin-bottom">
+                        <div class="animal__card-title">
+                            Eagles
+                        </div>
+                        <div class="animal__card-subtitle">
+                            Native to South America
+                        </div>
+                    </div>
+                    <div class="animals-card card-gorillas margin-bottom">
+                        <div class="animal__card-title">
+                            Gorillas
+                        </div>
+                        <div class="animal__card-subtitle">
+                            Native to Congo
+                        </div>
+                    </div>
+                    <div class="animals-card card-sloth margin-right">
+                        <div class="animal__card-title">
+                            Two-toed Sloth
+                        </div>
+                        <div class="animal__card-subtitle">
+                            Mesoamerica, South America
+                        </div>
+                    </div>
+                    <div class="animals-card card-cheetahs margin-right">
+                        <div class="animal__card-title">
+                            cheetahs
+                        </div>
+                        <div class="animal__card-subtitle">
+                            Native to Africa
+                        </div>
+                    </div>
+                    <div class="animals-card card-penguins">
+                        <div class="animal__card-title">
+                            Penguins
+                        </div>
+                        <div class="animal__card-subtitle">
+                            Native to Antarctica
+                        </div>
+                    </div>       
+                </div>
+                <img src="./assets/svg/Landing/arrow_elips_right.svg" alt="navigate" class="animals__vector">
+                <!-- ведёт на страницу map -->
+                <a href="/pages/map.html" class="button-link">
+                    <button type="submit" class="button__choose-your-favorite">
+                        choose your favorite
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section class="pick-feed__width-full">
+            <div class="background"></div>
+            <div class="pick-feed">
+                <div class="pick-feed__title">
+                    Pick and feed a friend
+                </div>
+                <div class="pick-feed__subtitle">
+                    We know the animals bring you joy, and in these extraordinary times, we’re glad.
+                </div>
+                <div class="pick-feed__text1">
+                    During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PatStory.
+                </div>
+                <div class="pick-feed__text2">
+                    Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a href="/donate.html" class="donate-link">Emergency Support Fund</a>. 
+                </div>
+                <h3 class="title__how-it-works">
+                    How it works
+                </h3>
+                <div class="wrap-instruction">
+                    <div class="card-img">
+                        <div class="card">
+                            <div class="instr-cards instr-card-step1"></div>
+                        </div>
+                        <img src="./assets/svg/Landing/vector-left.svg" alt="vector-left" class="vector">
+                        <div class="card">
+                            <div class="instr-cards instr-card-step2"></div>
+                        </div>
+                        <img src="./assets/svg/Landing/vector-left.svg" alt="vector-left" class="vector">
+                        <div class="card">
+                            <div class="instr-cards instr-card-step3"></div>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <div class="instr-card-text">
+                            Pay with card
+                        </div>
+                        <div class="instr-card-text">
+                            Payment goes to the zoo
+                        </div>
+                        <div class="instr-card-text">
+                            Your favourite animal gets delicious dish
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="button__feed">
+                    Feed a friend now
+                </button>
+            </div>
+        </section>
+
+        <section class="testimonials__width-full">
+            <div class="testimonials">
+                <h3 class="testimonials__title">
+                    Testimonials
+                </h3>
+                <div class="testimonials-pic">
+                    <img src="./assets/svg/testimonials1.svg" alt="testimonial">
+                    <img src="./assets/svg/testimonials2.svg" alt="testimonial">
+                    <img src="./assets/svg/testimonials3.svg" alt="testimonial">
+                    <img src="./assets/svg/testimonials4.svg" alt="testimonial">
+                </div>
+                <p class="line-scrol">
+                    <img src="./assets/svg/line_scrol.svg" alt="line-scrol">
+                </p>
+                <button type="submit" class="button__leave-feedback">
+                    leave feedback
+                </button>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="wrapper-footer-top">
+                <div class="footer__logo">
+                    <a href="/" class="logo-link">
+                        <img src="./assets/svg/logo.svg" alt="online-zoo logo">
+                    </a>
+                </div>
+                <div class="email-subscribe">
+                    <p class="subtitle-email">
+                        Subscribe to our news
+                    </p>
+                    <p class="email-form-info">
+                        <input type="email" placeholder="Enter your email" class="email-form-field">
+                        <input type="submit" class="email-form-submit" value="Submit">
+                    </p>
+                </div>
+            </div>
+            <!-- перебрасывает на donate -->
+            <a href="/pages/donate.html">
+                <button type="submit" class="button__donate">
+                    donate for volunteers
+                </button>
+            </a>
+            
+
+            <div class="wrapper-footer-bottom">
+                <div class="social-media">
+                    <a href="#!" class="sm-link">
+                        <img src="./assets/svg/facebook.svg" alt="facebook" class="sm">
+                    </a>
+                    <a href="#!" class="sm-link">
+                        <img src="./assets/svg/twitter.svg" alt="twitter" class="sm">
+                    </a>
+                    <a href="#!" class="sm-link">
+                        <img src="./assets/svg/instagram.svg" alt="instagram" class="sm">
+                    </a>
+                    <a href="#!" class="sm-link">
+                        <img src="./assets/svg/youtube.svg" alt="youtube" class="sm">
+                    </a>
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer__list-nav">
+                        <li class="header__item">
+                            <a href="/" class="header__link li-active">About</a>
+                        </li>
+                        <li class="header__item">
+                            <!-- перебрасывает на map -->
+                            <a href="/pages/map.html" class="header__link">Map</a>
+                        </li>
+                        <li class="header__item">
+                            <!-- перебрасывает на cam-panda-online -->
+                            <a href="/pages/camPanda.html" class="header__link">Zoos</a>
+                        </li>
+                        <li class="header__item">
+                            <!-- ничего не делает, либо создать страницу error404 -->
+                            <a href="#!" class="header__link">Contact us</a>
+                        </li>
+                       
+                       </ul>
+                </nav>
+                <div class="design-by">
+                    <div class="footer-margin">
+                        <a href="#!" class="text-design-by">
+                            Designed by Alisa Samborskaya
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!" class="text-design-by">
+                            ©RSSchool & ©Yem Digital 2021
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
