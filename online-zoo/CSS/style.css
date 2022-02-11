@@ -324,7 +324,7 @@ body {
   height: 426px;
   border: 1px solid #fe9013;
   border-radius: 5px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   overflow: hidden;
   cursor: pointer;
   position: relative;
@@ -717,6 +717,8 @@ body {
   overflow: hidden;
   margin-bottom: 21px;
   display: flex;
+  grid-gap: 23px;
+  padding-left: 15px;
   justify-content: space-between;
 }
 
@@ -727,7 +729,7 @@ body {
   background: #f1f3f2;
   border-radius: 20px;
   padding: 15px 15px 19px 16px;
-  margin-right: 30px;
+  margin: 2px 0px 2px 0;
 }
 
 .testimonials__item::before {
@@ -1039,6 +1041,10 @@ body {
   margin-right: 12px;
 }
 
+.sm-link:hover .sm circle {
+  fill: #4b9200;
+}
+
 .sm-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1252,6 +1258,7 @@ body {
   .animals-cards__wrap {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 20px;
+    overflow-y: scroll;
   }
 
   .animal-card__pic {
@@ -1382,7 +1389,7 @@ body {
 
   .testimonials__pic {
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 15px;
+    row-gap: 27px;
     margin-bottom: 30px;
   }
 
@@ -1391,6 +1398,7 @@ body {
     height: 109px;
     justify-self: center;
     padding: 10px 15px 19px 12px;
+    grid-gap: 20px;
   }
 
   .testimonials__item:last-child {
@@ -1673,9 +1681,12 @@ body {
   }
 
   .animals-cards__wrap {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
     row-gap: 92px;
+    height: 757px;
+    margin: 0;
   }
 
   .animal-card {
@@ -1817,9 +1828,11 @@ body {
 
   .testimonials__pic {
     height: 359px;
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 15px;
     margin-bottom: 39px;
+    overflow-y: scroll;
   }
 
   .testimonials__item:last-child {
@@ -2011,7 +2024,7 @@ body {
 
   .animals-cards__wrap {
     column-gap: 29px;
-    row-gap: 92px;
+    row-gap: 21px;
   }
 
   .animals__vector-left {
@@ -2046,6 +2059,7 @@ body {
   .animals__button-wrap {
     margin-top: 81px;
     padding-bottom: 140px;
+    margin-top: 8px;
   }
 
   /* ANIMALS STYLES END */
@@ -2111,9 +2125,10 @@ body {
 
   .testimonials__pic {
     grid-template-columns: repeat(3, 1fr);
-    height: 391px;
+    height: 395px;
     column-gap: 27px;
     margin-bottom: 15px;
+    padding-left: 2px;
   }
 
   .testimonials__item:last-child {
